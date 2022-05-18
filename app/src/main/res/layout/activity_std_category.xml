@@ -5,15 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#E7E0FF"
     tools:context=".StdCategoryActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/colorPrimary"
-        android:theme="@style/ThemeOverlay.AppCompat.Light"
-        >
+        android:background="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
     </androidx.appcompat.widget.Toolbar>
 
@@ -24,7 +26,7 @@
         android:id="@+id/catListview"
         android:background="#E7E0FF"
         android:gravity="center"
-        android:columnWidth="100dp"
-        android:numColumns="2"></ListView>
+
+        android:columnWidth="100dp"></ListView>
 
 </LinearLayout>

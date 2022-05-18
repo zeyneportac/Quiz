@@ -13,9 +13,9 @@ import java.util.Random;
 
 public class CatGridAdapter extends BaseAdapter {
 
-    private List<StdCategoryModel> catList;
+    private List<CategoryModel> catList;
 
-    public CatGridAdapter(List<StdCategoryModel> catList) {
+    public CatGridAdapter(List<CategoryModel> catList) {
         this.catList = catList;
     }
 

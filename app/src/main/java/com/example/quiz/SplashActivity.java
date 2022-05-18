@@ -20,7 +20,7 @@ public class SplashActivity extends AppCompatActivity {
 
     private TextView appName;
 
-    public static List<StdCategoryModel> catList = new ArrayList<>();
+    public static List<CategoryModel> catList = new ArrayList<>();
     public static int selected_cat_index = 0;
     private FirebaseFirestore firestore;
 
@@ -70,9 +70,9 @@ public class SplashActivity extends AppCompatActivity {
                                 for(int i=1; i <= count; i++)
                                 {
                                     String catName = doc.getString("CAT" + String.valueOf(i) + "_NAME");
-                                    String catID = doc.getString("CAT" + String.valueOf(i) + "_ID");
+                                    String catid = doc.getString("CAT" + String.valueOf(i) + "_ID");
 
-                                    catList.add(new StdCategoryModel(catID,catName));
+                                    catList.add(new CategoryModel(catid,catName,"0","1"));
                                 }
 
 
