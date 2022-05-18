@@ -13,9 +13,9 @@ import java.util.Random;
 
 public class CatGridAdapter extends BaseAdapter {
 
-    private List<CategoryModel> catList;
+    private List<StdCategoryModel> catList;
 
-    public CatGridAdapter(List<CategoryModel> catList) {
+    public CatGridAdapter(List<StdCategoryModel> catList) {
         this.catList = catList;
     }
 
@@ -42,7 +42,7 @@ public class CatGridAdapter extends BaseAdapter {
 
         if(convertView == null)
         {
-            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cat_item_layout,parent,false);
+            view = LayoutInflater.from(parent.getContext()).inflate(R.layout.cat_std_item_layout,parent,false);
         }
         else
         {
@@ -63,9 +63,6 @@ public class CatGridAdapter extends BaseAdapter {
 
         ((TextView) view.findViewById(R.id.catName)).setText(catList.get(position).getName());
 
-        Random rnd = new Random();
-        int color = Color.argb(255, rnd.nextInt(255),rnd.nextInt(255),rnd.nextInt(255));
-        view.setBackgroundColor(color);
 
 
         return view;

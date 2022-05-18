@@ -29,7 +29,7 @@ public class ScoreActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(ScoreActivity.this,LoginActivity.class);
+                Intent intent = new Intent(ScoreActivity.this,MainActivity.class);
                 ScoreActivity.this.startActivity(intent);
                 ScoreActivity.this.finish();
 

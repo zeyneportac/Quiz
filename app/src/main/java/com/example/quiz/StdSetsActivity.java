@@ -33,7 +33,7 @@ public class StdSetsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sets);
+        setContentView(R.layout.activity_std_sets);
 
         Toolbar toolbar = findViewById(R.id.set_toolbar);
         setSupportActionBar(toolbar);
